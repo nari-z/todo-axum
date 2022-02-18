@@ -6,7 +6,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-axum = "0.4.4"
-hyper = { version = "0.14.16", features = ["full"] }
-tokio = { version = "1.16.0", features = ["full"] }
-serde = { version = "1.0.136", features = ["derive"] }
+axum = "0.4"
+uuid = { version = "0.8", features = ["serde", "v4"] }
+hyper = { version = "0.14", features = ["full"] }
+tokio = { version = "1.16", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+tower = { version = "0.4.12", features = ["full"] }
