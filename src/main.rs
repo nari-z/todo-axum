@@ -19,6 +19,7 @@ async fn main() {
     let app = Router::new()
         .route("/", get(root::root))
         .route("/todos", post(todo::create))
+        .route("/todos/:id", get(todo::find))
         .route("/health", get(health::health))
         .layer(
             ServiceBuilder::new()
